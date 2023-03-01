@@ -36,7 +36,7 @@ public class JoinListener implements Listener{
 			for(UUID fName : friendsM.getFriends(p.getUniqueId())) {
 				ProxiedPlayer player = ProxyServer.getInstance().getPlayer(fName);
 				if(player == null) continue;
-				player.sendMessage(new TextComponent(main.getFriendsPrefix() + "�b" + p.getName() + " �fvient de se �aconnecter�f."));
+				player.sendMessage(new TextComponent(main.getFriendsPrefix() + "§b" + p.getName() + " §fvient de se §aconnecter§f."));
 			}
 		}
 	}
@@ -50,7 +50,7 @@ public class JoinListener implements Listener{
 			for(UUID fuuid : friendsM.getFriends(p.getUniqueId())) {
 				ProxiedPlayer player = ProxyServer.getInstance().getPlayer(fuuid);
 				if(player == null) continue;
-				player.sendMessage(new TextComponent(main.getFriendsPrefix() + "�b" + p.getName() + " �fvient de se �cd�connecter�f."));
+				player.sendMessage(new TextComponent(main.getFriendsPrefix() + "§b" + p.getName() + " §fvient de se §cdéconnecter§f."));
 			}
 		}
 	}
